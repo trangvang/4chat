@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+
 class Users extends React.Component {
     render() {
         return (
@@ -10,4 +11,4 @@ class Users extends React.Component {
     }
 }
 
-export default Users
+export default Users;

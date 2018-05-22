@@ -44,7 +44,7 @@ class Login extends React.Component {
                         height: 40,
                         width:160,
                         marginTop :20}}>
-                    <Button title='Sign In' 
+                    <Button title='LogIn' 
                         style={styles.Button}
                         onPress={this.signIn} />
                 </TouchableHighlight> 
@@ -63,7 +63,7 @@ class Login extends React.Component {
     }
 }
 
-export default Login
+export default Login;
 
 const styles = StyleSheet.create({
     container:{

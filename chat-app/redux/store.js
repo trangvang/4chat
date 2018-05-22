@@ -9,7 +9,6 @@ const connection = (state = { connected: false, isLogin: false, user: null }, ac
         case 'CONNECTION_FULFILLED':
             return { connected: true, user: action.payload };
         case 'LOGGED':
-            console.log('LOGGED', action);
             return { ...state, connected: true, isLogin: true, user: action.data };
         default:
             return state;

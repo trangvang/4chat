@@ -49,13 +49,6 @@ class AppStackNavigator extends React.Component {
             }
         });
     }
-    componentWillReceiveProps(nextProps) {
-        console.log("componentWillReceiveProps", nextProps);
-    }
-
-    componentWillMount() {
-        console.log('AppStackNavigator', this.props)
-    }
     render() {
         return (
             <AppNavigator screenProps={this.props} />
@@ -63,4 +56,4 @@ class AppStackNavigator extends React.Component {
     }
 }
 
-export default AppStackNavigator  
+export default AppStackNavigator;  

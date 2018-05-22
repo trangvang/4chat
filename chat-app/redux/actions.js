@@ -1,6 +1,6 @@
 window.navigator.userAgent = "react-native";
 let io = require('react-native-socket.io-client/socket.io');
-var socket = io.connect('http://192.168.1.33:3000/');
+var socket = io.connect('http://192.168.1.33:3000/'); //Android read IP directly, iOS can use localhost
 
 export default function mapDispatchToProps(dispatch) {
     socket.on('logged', function (data) {
@@ -15,7 +15,6 @@ export default function mapDispatchToProps(dispatch) {
             type: 'CREATE_USER',
             data
         })
-
     });
 
     socket.on('users fetched', function (data) {
@@ -36,7 +35,7 @@ export default function mapDispatchToProps(dispatch) {
             });
         },
         login: (userName) => {
-            socket.emit('login', { userName: userName });
+            socket.emit('joinserver', { userName: userName });
         },
         createUser: (userName) => {
             socket.emit('add user', { userName: userName });

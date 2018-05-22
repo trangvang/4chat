@@ -1,5 +1,5 @@
 import React from 'react';
-import { GiftedChat } from 'react-native-gifted-chat'
+import { GiftedChat } from 'react-native-gifted-chat';
 
 class Chat extends React.Component {
     constructor(props) {
@@ -8,14 +8,6 @@ class Chat extends React.Component {
             messages: [],
             messagesId: 0
         }
-        console.log("chat")
-    } 
-    componentWillUpdate(){
-        console.log('componentWillReceiveProps', this.props)
-
-    }
-    componentWillReceiveProps(nextProps){
-        console.log('componentWillReceiveProps', nextProps)
     }
 
     componentWillMount() {
@@ -28,7 +20,7 @@ class Chat extends React.Component {
                     user: {
                         _id: 2,
                         name: 'React Native',
-                        avatar: 'https://placeimg.com/140/140/any',
+                        avatar: 'https://placeimg.com/150/150/nature',
                     },
                 },
             ],
@@ -48,7 +40,7 @@ class Chat extends React.Component {
                 user: {
                     _id: 2,
                     name: 'React Native',
-                    avatar: 'https://placeimg.com/140/140/any',
+                    avatar: 'https://placeimg.com/150/150/people',
                 },
             }),
         }))
@@ -67,4 +59,4 @@ class Chat extends React.Component {
     }
 }
 
-export default Chat
+export default Chat;
